@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+<h1> Bestilling av kinobiletter</h1>
+<!--personen velger en film her-->
+<table>
+    <label for="film">Velg film:</label>
+      <select id="film">
+        <option disabled selected hidden value>Velg film her</option>
+        <option>Hunger games</option>
+        <option>Aquaman</option>
+        <option> The Matrix </option>
+        <option> Fight Club </option>
+      </select>
+    <tr>
+        <td><label for="antall">Antall</label></td>
+        <td><input type="number" min="1" max = 50 id="antall" style="width: 25%"/></td>
+    </tr>
+<tr>
+    <td><label for="navn">Fornavn</label></td>
+    <td><input id="navn"/></td>
+</tr>
+<tr>
+    <td><label for="etternavn">Etternavn</label></td>
+    <td><input id="etternavn" /></td>
+</tr>
+<tr>
+    <td><label for="telefonnr">Telefonnr</label></td>
+    <td><input type="tel" id="telefonnr" /></td>
+</tr>
+<tr>
+    <td><label for="epost">Email</label>
+    </td><td><input type="email" id="epost"/></td>
+</tr>
+    <tr>
+    <td><button onclick="kjopBilett();">Kjøp bilett</button></td>
+    </tr>
+</table>
+
+<h2>Alle biletter</h2>
+<ul id="billettListe"></ul>
+
+<button onclick = "slettAlleBilletter()">Slett alle billetter</button>
+    <!-- Her vil listen over alle billetter bli vist -->
+</body>
+</html>
